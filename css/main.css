@@ -61,6 +61,7 @@ body {
   background-color: var(--hero-color);
   color: #ffffff;
 }
+
 .hero-title {
   font-family: inherit;
   font-style: normal;
@@ -125,17 +126,19 @@ body {
   font-weight: 500;
   color: var(--primary-text-color);
 }
+
 .specialty {
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
   color: var(--dop-text-color);
 }
+
 /* section foot */
 .foot {
   background-color: var(--hero-color);
   color: #ffffff;
-  font-family: Roboto, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -143,10 +146,22 @@ body {
   letter-spacing: 0.03em;
 }
 
+.cont-text {
+  font-style: normal;
+}
+
 /* portfolio */
 .heading-work {
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
   color: var(--primary-text-color);
 }
