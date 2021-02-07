@@ -6,8 +6,8 @@
   --hero-color: rgba(47, 48, 58, 1);
 }
 
-.list {
-  list-style: none;
+ul {
+  list-style-type: none;
 }
 
 body {
@@ -74,6 +74,7 @@ body {
 
 .button-primary {
   font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   background-color: blue;
   color: #ffffff;
@@ -140,4 +141,12 @@ body {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+/* portfolio */
+.heading-work {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text-color);
 }
