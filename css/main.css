@@ -2,8 +2,12 @@
   --primary-text-color: rgba(33, 33, 33, 1);
   --dop-text-color: rgba(117, 117, 117, 1);
   --title-text-color: rgb(24, 83, 172);
-  --footer-color: rgba(47, 48, 58, 1);
   --hero-color: rgba(47, 48, 58, 1);
+  --h-text-color: rgba(255, 255, 255, 1);
+  --f-text-color: rgba(255, 255, 255, 0.6);
+  --logo-color: rgba(0, 0, 0, 1);
+  --button-color: rgba(245, 244, 250, 1);
+  --button-active-color: #2196f3;
 }
 
 ul {
@@ -11,32 +15,34 @@ ul {
 }
 
 body {
+  background-color: var(--h-text-color);
   font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
 }
 
 .logo,
 .logof {
   text-decoration: none;
   font-family: Raleway, sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: inherit;
+  line-height: 1.2;
+  color: var(--logo-color);
 }
 
-.logo:hover,
-.logo:focus {
-  color: var(--title-text-color);
+.logof {
+  color: var(--h-text-color);
+  background-color: var(--hero-color);
 }
 
 /* Site nav */
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts-nav .link:hover,
-.contacts-nav .link:focus {
+.contacts-nav .link:focus,
+.button:hover,
+.button:focus {
   color: var(--title-text-color);
 }
 
@@ -47,27 +53,20 @@ body {
 .site-nav .link,
 .contacts-nav .link {
   text-decoration: none;
-  font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: inherit;
+  color: var(--primary-text-color);
 }
 
 /* section hero */
-.hero {
-  background-color: var(--hero-color);
-  color: #ffffff;
-}
-
 .hero-title {
-  font-family: inherit;
-  font-style: normal;
+  background-color: var(--hero-color);
+  color: var(--h-text-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -77,8 +76,9 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  background-color: blue;
-  color: #ffffff;
+  line-height: 1.9;
+  background-color: var(--button-active-color);
+  color: var(--h-text-color);
 }
 
 /* section about */
@@ -97,71 +97,84 @@ body {
 }
 
 .about-a {
-  font-family: inherit;
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
   color: var(--primary-text-color);
 }
 
 .about-b {
-  font-family: inherit;
   font-size: 14px;
-  font-weight: 400;
+  line-height: 1.7;
   color: var(--dop-text-color);
 }
 
 /* чем занимаемся */
 .what-doing,
 .team {
-  font-family: inherit;
-  font-size: 36px;
   font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   color: var(--primary-text-color);
 }
 
 /* наша команда */
 .name-card {
-  font-family: inherit;
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
   color: var(--primary-text-color);
 }
 
 .specialty {
-  font-family: inherit;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
   color: var(--dop-text-color);
 }
 
 /* section foot */
-.foot {
+.adr {
   background-color: var(--hero-color);
-  color: #ffffff;
-  font-family: inherit;
-  font-style: normal;
+  color: var(--h-text-color);
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.7;
 }
 
-.cont-text {
-  font-style: normal;
+.contacts-navf .link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--f-text-color);
 }
 
 /* portfolio */
 .heading-work {
   font-family: inherit;
-  font-size: 18px;
   font-weight: 700;
-  color: var(--primary-text-color);
+  font-size: 18px;
+}
+
+.description {
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--dop-text-color);
 }
 
 .button {
   font-family: inherit;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--button-color);
+  text-align: center;
+  border-color: transparent;
+}
+
+.button.all {
+  color: var(--h-text-color);
+  background-color: var(--button-active-color);
 }
