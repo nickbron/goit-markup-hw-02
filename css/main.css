@@ -42,7 +42,9 @@ body {
 .contacts-nav .link:hover,
 .contacts-nav .link:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+.button.all:hover,
+.button.all:focus {
   color: var(--title-text-color);
 }
 
