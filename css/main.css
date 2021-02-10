@@ -1,13 +1,12 @@
 :root {
   --primary-text-color: rgba(33, 33, 33, 1);
   --dop-text-color: rgba(117, 117, 117, 1);
-  --title-text-color: rgb(24, 83, 172);
+  --title-text-color: rgba(33, 150, 243, 1);
   --hero-color: rgba(47, 48, 58, 1);
   --h-text-color: rgba(255, 255, 255, 1);
   --f-text-color: rgba(255, 255, 255, 0.6);
   --logo-color: rgba(0, 0, 0, 1);
   --button-color: rgba(245, 244, 250, 1);
-  --button-active-color: #2196f3;
 }
 
 ul {
@@ -40,11 +39,7 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts-nav .link:hover,
-.contacts-nav .link:focus,
-.button:hover,
-.button:focus,
-.button.all:hover,
-.button.all:focus {
+.contacts-nav .link:focus {
   color: var(--title-text-color);
 }
 
@@ -79,7 +74,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  background-color: var(--button-active-color);
+  background-color: var(--title-text-color);
   color: var(--h-text-color);
 }
 
@@ -137,6 +132,7 @@ body {
 
 /* section foot */
 .adr {
+  font-style: normal;
   background-color: var(--hero-color);
   color: var(--h-text-color);
   font-weight: 400;
@@ -146,8 +142,6 @@ body {
 
 .contacts-navf .link {
   text-decoration: none;
-  font-size: 14px;
-  line-height: 1.7;
   color: var(--f-text-color);
 }
 
@@ -176,7 +170,8 @@ body {
   border-color: transparent;
 }
 
-.button.all {
+.buttonp .button:hover,
+.buttonp .button:focus {
   color: var(--h-text-color);
-  background-color: var(--button-active-color);
+  background-color: var(--title-text-color);
 }
